@@ -33,7 +33,33 @@
 - type "reboot"
 - type "clear"
 - type "sudo -V"
--  
+- type "sudo visudo"
+- type the settings (retry, badpass message)
+- save (ctrl+X)
+- type "sudo mkdir" -p / var/log/sudo/ 
+- clear
+- type "sudo touch /var/log/sudo/sudo.log"
+- clear
+
+# Installing and Configuring SSH 
+
+- type "sudo apt install openssh-server -y"
+- clear
+- sudo nano /etc/ssh/sshd_config
+- Go to "Port"
+- Type "4242"
+- Then delete "Permit Root Login"
+- Write "PermitRootLogin no"
+- save (ctrl+X) 
+- clear
+
+# Optional
+
+- type sudo nano /etc/ssh/ssh_config
+- save (ctrl+X) 
+- clear
+- type "sudo service ssh status"
+- 
 
 
 
