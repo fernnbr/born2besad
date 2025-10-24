@@ -1,3 +1,103 @@
+<p align="center">
+  <img src="[_](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWlqcG9wc3lmcjdoNTN0amcxNDRuZXFxZWsxNnBrMTZocjhhdDJlMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eImrJKnOmuBDmqXNUj/giphy.gif)">
+</p></figcaption>
+<p align="center">
+  (Alert! Alert! Alert!)
+</p>
+
+</div>
+
+
+# Critical Rules and Cautions
+#### Here are the critical rules you MUST follow and where they appear in my step-by-step guide
+
+## CRITICAL - Will Result in Grade 0
+
+1. NO Graphical Interface ❌
+
+- Rule: Installing X.org or any graphical server = automatic 0
+- Where: ✅ Already covered in **Step 14**: Software Selection - only select SSH and standard utilities
+
+## NO Snapshots During Evaluation ❌
+
+- Rule: If snapshots are detected during defense = automatic 0
+
+- Where: ⚠️ **Step 42** recommends creating a snapshot - **DELETE IT BEFORE EVALUATION**
+
+(Action needed: Remove the snapshot I recommended, or don't create it at all)
+
+## Signature Must Match ❌
+
+- Rule: If signature.txt doesn't match your VM = automatic 0
+- **Where: Not in my guide - NEW STEP NEEDED**
+Action: After completing all configuration, generate the signature
+
+## Missing Steps in My Guide
+4. Hostname Modification During Defense
+
+- Rule: You must be able to change the hostname during evaluation
+- Where: Missing from my guide
+
+Add after Step 8: Practice command ```hostnamectl set-hostname newhostname42```
+
+## Creating New User During Defense
+
+- Rule: You must create a new user and assign to a group during evaluation
+- Where: Partially covered in Step 29-30, but needs practice
+
+### Commands to know:
+
+```
+bash  sudo adduser newusername
+sudo usermod -aG groupname newusername
+```
+
+## Stopping Monitoring Script Without Modifying It
+
+- Rule: Must be able to stop the script during defense without editing it
+- Where: Mentioned in Step 40 but not explained
+
+### Commands to know:
+
+```
+bash  sudo systemctl disable cron    # Disable cron service
+sudo systemctl stop cron       # Stop cron immediately
+```
+
+# Subject-Specific Requirements
+
+### Operating System Choice
+
+- Rule: Must use latest stable Debian (recommended) or Rocky
+- Where: ✅ Covered in "Choosing Your Linux Distribution"
+- Important: Be ready to explain why you chose Debian and differences between ```apt``` and ```aptitude```
+
+### AppArmor Must Run at Boot (Debian)
+
+- Rule: AppArmor must be running on startup
+- Where: ⚠️ MISSING from my guide
+- Add NEW Step after Step 25:
+
+```
+bash  sudo systemctl status apparmor    # Check status
+sudo systemctl enable apparmor    # Ensure it starts at boot
+```
+
+### Firewall Must Be Active at Boot
+
+- Rule: UFW must start automatically
+- Where: ✅ **Covered in Step 25** (ufw enable does this)
+Verify with: ```sudo systemctl status ufw```
+
+### Root Password Must Follow Policy
+
+- Rule: Root password must comply with the new policy (except the 7 different characters rule)
+- Where: ✅ Covered in Step 37
+(Note: Subject clarifies root doesn't need 7 different characters from old password)
+
+
+---
+
 # Part 1: Virtual Machine Creation
 ### Understanding Hypervisors
 #### What is a hypervisor?
@@ -62,6 +162,11 @@ Recommendation: Choose Debian if you're new to system administration.
 (Home directory only has 5 GB, which is insufficient)
 
 - (!) IMPORTANT: Check ✅ "Skip Unattended Installation"
+
+
+---
+
+
 
 
 - Click Next
