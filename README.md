@@ -159,7 +159,7 @@ Recommendation: Choose Debian if you're new to system administration.
 # Part 2: Downloading and Setting Up VirtualBox
 
 <p align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbG9kZmJ6Z3RmaWtkemIydnVlYW40ZDN4aGJiY3g5MnN6cjVqaTR6bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cMgkRA6RVDSt1RyB8u/giphy.gif">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFoczQweHN1ZXA1MmRkZWhhdGlqaWo4eXA2emM4YmtycjBpcjF1NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hVVJisUlKBgQYc6PQh/giphy.gif">
 </p></figcaption>
 <p align="center">
   (Alert! Alert! Alert!) 
