@@ -105,7 +105,7 @@ Verify with: ```sudo systemctl status ufw```
 # Part 1: Virtual Machine Creation
 
 <p align="center">
-  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWlqcG9wc3lmcjdoNTN0amcxNDRuZXFxZWsxNnBrMTZocjhhdDJlMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eImrJKnOmuBDmqXNUj/giphy.gif">
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGEzd2M5eGF4dTdsc3Fsa29vcmYzeWFkbTdyczRwbDBjZGtmNjRobiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hrdX1BsUBq7DkGJCCd/giphy.gif">
 </p></figcaption>
 <p align="center">
   (Alert! Alert! Alert!) 
