@@ -1,14 +1,14 @@
+# Critical Rules and Cautions
+
 <p align="center">
-  <img src="[_](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWlqcG9wc3lmcjdoNTN0amcxNDRuZXFxZWsxNnBrMTZocjhhdDJlMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eImrJKnOmuBDmqXNUj/giphy.gif)">
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWlqcG9wc3lmcjdoNTN0amcxNDRuZXFxZWsxNnBrMTZocjhhdDJlMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eImrJKnOmuBDmqXNUj/giphy.gif">
 </p></figcaption>
 <p align="center">
-  (Alert! Alert! Alert!)
+  (Alert! Alert! Alert!) 
 </p>
 
 </div>
 
-
-# Critical Rules and Cautions
 #### Here are the critical rules you MUST follow and where they appear in my step-by-step guide
 
 ## CRITICAL - Will Result in Grade 0
