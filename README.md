@@ -71,9 +71,12 @@
 
 # Connecting to the VM via SSH 
 
-- ssh (your username)@127.0.0.1 -p 4242
+- ssh (your username)@(your IP) -p 4242
+(In case of error try see your ip with ip a; if the error persists, shut down the VM; then open it again;
+then sleect your VM; then go to settings; then go to network; then change NAt to bridge; then use ip a again; then get the IP and redo the ssh step)
 
-(https://youtu.be/3Vw0HlJHLTQ?si=q4jSfrZ_xoCdIjlc&t=592)
+Continue
+(https://youtu.be/3Vw0HlJHLTQ?si=lsyIAY6g-ddQdhSz&t=651)
 
 
 
