@@ -1,4 +1,7 @@
-# Critical Rules and Cautions
+
+<p align="center">
+
+  # Critical Rules and Cautions
 
 <p align="center">
   <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWlqcG9wc3lmcjdoNTN0amcxNDRuZXFxZWsxNnBrMTZocjhhdDJlMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eImrJKnOmuBDmqXNUj/giphy.gif">
@@ -7,7 +10,7 @@
   (Alert! Alert! Alert!) 
 </p>
 
-</div>
+
 
 #### Here are the critical rules you MUST follow and where they appear in my step-by-step guide
 
@@ -95,10 +98,20 @@ Verify with: ```sudo systemctl status ufw```
 - Where: ✅ Covered in Step 37
 (Note: Subject clarifies root doesn't need 7 different characters from old password)
 
-
+</div>
 ---
 
+<p align="center">
 # Part 1: Virtual Machine Creation
+
+<p align="center">
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWlqcG9wc3lmcjdoNTN0amcxNDRuZXFxZWsxNnBrMTZocjhhdDJlMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eImrJKnOmuBDmqXNUj/giphy.gif">
+</p></figcaption>
+<p align="center">
+  (Alert! Alert! Alert!) 
+</p>
+
+
 ### Understanding Hypervisors
 #### What is a hypervisor?
 
@@ -136,6 +149,9 @@ and it's known for stability, security, and a huge collection of software packag
 
 Recommendation: Choose Debian if you're new to system administration.
 
+</div>
+
+---
 
 # Part 2: Downloading and Setting Up VirtualBox
 
