@@ -28,6 +28,11 @@
 - type clear
 - type apt install sudo
 - clear
+- type "add user (your user) sudo"
+- type "getent group sudo"
+- type "reboot"
+- type "clear"
+- type "sudo -V"
 -  
 
 
