@@ -1,11 +1,21 @@
-- Partition disks: Separate /home partition
-- Click yes
+- Partition disks: Select "Separate /home partition"
+- Click "Yes"
 - Wait
-- Type a strong password
-- Amout of volume: max; then click continue
+- Type a strong password (min 10 char len, with lower and upper char, numbers and special char) 
+- Amount of volume: type "max"; then click "continue"
 - Click "Finish Partitioning and Write Changes"
 - Click "Yes"
-- 
+- Wait
+- Click "No"
+- Click "Debian.org" option
+- Click Continue
+- Wait
+- Click "No" for the Survey
+-  Now select only "SSH Server" and "standard system utilities"
+-  Click "Yes" to install the GRUB loader
+-  Select /dev/sda (ata-VBOX...)
+-  Confirm reboot (select "Yes")
+-  
 
 
 
