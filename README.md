@@ -102,7 +102,8 @@ Verify with: ```sudo systemctl status ufw```
 ---
 
 <p align="center">
-# Part 1: Virtual Machine Creation
+
+  # Part 1: Virtual Machine Creation
 
 <p align="center">
   <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGEzd2M5eGF4dTdsc3Fsa29vcmYzeWFkbTdyczRwbDBjZGtmNjRobiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hrdX1BsUBq7DkGJCCd/giphy.gif">
