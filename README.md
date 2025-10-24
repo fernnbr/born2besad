@@ -1,3 +1,5 @@
+# Installing 
+
 - Partition disks: Select "Separate /home partition"
 - Click "Yes"
 - Wait
@@ -15,6 +17,17 @@
 -  Click "Yes" to install the GRUB loader
 -  Select /dev/sda (ata-VBOX...)
 -  Confirm reboot (select "Yes")
+
+# Server Configuration
+
+- login
+- clear
+- type "su -"
+- type password
+- type "apt update"
+- type clear
+- type apt install sudo
+- clear
 -  
 
 
