@@ -59,7 +59,21 @@
 - save (ctrl+X) 
 - clear
 - type "sudo service ssh status"
-- 
+
+#Installing and Configurin UFW
+
+- type "sudo apt install ufw -y"
+- wait
+- clear
+- type "sudo ufw enable"
+- type "sudo ufw allow 4242"
+- sudo ufw status
+
+# Connecting to the VM via SSH 
+
+- ssh (your username)@127.0.0.1 -p 4242
+
+(https://youtu.be/3Vw0HlJHLTQ?si=q4jSfrZ_xoCdIjlc&t=592)
 
 
 
