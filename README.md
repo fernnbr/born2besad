@@ -1,3 +1,38 @@
+- Partition disks: Separate /home partition
+- Click yes
+- Wait
+- Type a strong password
+- Amout of volume: max; then click continue
+- Click "Finish Partitioning and Write Changes"
+- Click "Yes"
+- 
+
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <p align="center">
 
