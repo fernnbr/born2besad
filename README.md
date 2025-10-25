@@ -97,7 +97,29 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 ### Install the Password Quality Checking Lib
 
 - type "sudo apt-get install libpam-pwquality -y"
-- 
+- Wait
+- clear
+- type "sudo nano /etc/pam.d/common-password"
+- Go to password requisite pam_pwquality.so retry=3 and add after it: minlen=10 ucredit=-1 lcredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
+- Save (ctrl+X) 
+- Clear
+- type "sudo reboot"
+- Unlock VM
+
+# Update the old login to comply with the password policy
+
+- type "passwd"
+- Type your current password
+- Type your new password
+- Clear
+- type "sudo chage -l (your user)"
+- Type your password
+- See the log of password changes info
+- Type "sudo chage -M 30 -m 2 -W 7 (your user)" (to change the config)
+- Clear
+
+
+
 
 Continue
 (https://youtu.be/3Vw0HlJHLTQ?si=lsyIAY6g-ddQdhSz&t=651)
