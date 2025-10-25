@@ -118,6 +118,37 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 - Type "sudo chage -M 30 -m 2 -W 7 (your user)" (to change the config)
 - Clear
 
+# Update the old root password to comply the policy 
+
+- type "sudo passwd root"
+- sudo chage -l root
+- sudo chage -M 30 -m 2 -W 7 root (to change the config)
+- sudo chage -l root (to check the changes)
+- clear
+
+# Creating Users and Groups 
+
+- type "sudo adduser new_user"
+- type new password
+- clear
+- type "getent passwd new_user"
+- clear
+- type "sudo addgroup user42"
+- type "sudo addgroup evaluating"
+- type "sudo adduser (your user42)"
+- type New Password
+- clear
+- type "sudo adduser (your user) user42"
+- type "sudo add user (your user) evaluating"
+- clear
+- type "getent group user42"
+- type "getent group evaluating"
+
+# Crontab Config
+
+- 
+
+
 
 
 
