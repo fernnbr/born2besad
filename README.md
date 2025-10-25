@@ -445,11 +445,12 @@ Sudo : $cmnd commands"
 <p align="center">
 </p>
 
-A virtual machine (VM) is a software-based emulation of a physical computer that runs on a host system. 
-It works through a layer called a hypervisor (or Virtual Machine Monitor), which sits between the hardware and the virtual machines. 
+A **virtual machine (VM) is a software-based emulation of a physical computer that runs on a host system**. 
+
+It **works through a layer called a hypervisor** (or Virtual Machine Monitor), which sits between the hardware and the virtual machines. 
 The hypervisor allocates physical resources, like **CPU, memory, storage, and network—to each VM and manages their execution**.
 
-There are two types of hypervisors:
+There are **two types of hypervisors**:
 
 - **Type 1 (bare-metal)**: Runs directly on hardware (e.g., VMware ESXi, Hyper-V)
 - **Type 2 (hosted)**: Runs on top of an operating system (e.g., VirtualBox, VMware Workstation)
@@ -469,17 +470,18 @@ This isolation means VMs are independent—if one crashes, others continue runni
 
 Both are popular Linux distributions but serve different philosophies and use cases. 
 
-- CentOS (now CentOS Stream) is based on Red Hat Enterprise Linux (RHEL) and uses the RPM package management system with YUM/DNF package managers.
-It focuses on enterprise stability with longer release cycles and extended support periods.
+- **CentOS (now CentOS Stream)** is based on Red Hat Enterprise Linux (RHEL) and uses the RPM package management system with YUM/DNF package managers.
+It **focuses on enterprise stability with longer release cycles and extended support periods**.
 
-- Debian, on the other hand, is an independent, community-driven distribution known for its stability and vast software repositories.
+- **Debian, on the other hand, is an independent, community-driven** distribution known for its **stability and vast software repositories**.
+
 It uses the DEB package format with APT package managers and offers three branches:
 Stable, Testing, and Unstable, giving users more flexibility in choosing between stability and cutting-edge features.
 
 ## Purpose of Virtual Machines 
 
 <p align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXZwdzZtNGdnc3E3ejRiaG8xeDhqcG1ocDJ5c3phYWZybzN2MHY3bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bLk0duhUxBrpHLA4M5/giphy.gif">
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnlqd2hiNmp1bDltb2J1OTYyOHdnZ3loNTBhY20zazBwdGswdjR1MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/urvsFBDfR6N32/giphy.gif">
 </p></figcaption>
 <p align="center">
 </p>
@@ -487,13 +489,18 @@ Stable, Testing, and Unstable, giving users more flexibility in choosing between
 Virtual machines serve several critical purposes in modern computing:
 
 - **Server Consolidation**: Multiple VMs can run on a single physical server, maximizing hardware utilization and reducing costs
+  
 - **Isolation and Security**: VMs provide sandboxed environments, preventing software conflicts and containing security breaches
+  
 - **Development and Testing**: Developers can create identical environments for testing without affecting production systems
-- Legacy Application Support: Old software can run on older OS versions within VMs on modern hardware
+  
+- **Legacy Application Support**: Old software can run on older OS versions within VMs on modern hardware
+  
 - **Disaster Recovery**: VMs can be easily backed up, cloned, and migrated between hosts
+  
 - **Cloud Computing**: VMs form the foundation of cloud infrastructure, enabling scalable, on-demand computing resources
 
-## APT vs AptitudeAPT (Advanced Package Tool) and Aptitude 
+## APT vs AptitudeAPT (Advanced Package Tool) and Aptitude (https://youtu.be/i_SsnRdgitA?si=RcNbo9RApzX-4aui)
 
 <p align="center">
   <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJkc2ppM2FyZ253eGg0YmFxZTF4ZDhmNnZidW9mY20wdTB0Yzl0YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/asI6WBJXOn30I/giphy.gif">
@@ -501,15 +508,15 @@ Virtual machines serve several critical purposes in modern computing:
 <p align="center">
 </p>
 
-Both are package management tools for Debian-based systems, but they differ in functionality and interface. 
+Both are **package management tools for Debian-based systems**, but they differ in functionality and interface. 
 
-- APT is a command-line tool that provides basic package management functions (install, remove, update) and is the lower-level tool that other package managers build upon. 
+- **APT is a command-line tool** that provides **basic package management functions** (install, remove, update) and is the lower-level tool that other package managers build upon. 
 
-- Aptitude is a higher-level interface that includes both a text-based interactive UI and command-line functionality.
+- **Aptitude is a higher-level interface** that includes both a **text-based interactive UI and command-line functionality**.
 
 It offers more sophisticated dependency resolution, can automatically handle orphaned packages, and provides features like package search with filtering. 
 
-While APT is simpler and faster for basic operations, Aptitude is more powerful for complex package management scenarios, 
+While **APT is simpler and faster for basic operations, Aptitude is more powerful for complex package management scenarios**, 
 though modern versions of APT have incorporated many of Aptitude's improvements.
 
 ## AppArmorAppArmor (Application Armor) 
@@ -520,14 +527,15 @@ though modern versions of APT have incorporated many of Aptitude's improvements.
 <p align="center">
 </p>
 
-is a Linux security module that implements mandatory access control (MAC) to restrict programs' capabilities and access to system resources. 
+is a **Linux security module that implements mandatory access control (MAC) to restrict programs' capabilities and access to system resources**. 
 
 It works by assigning security profiles to applications that define what files they can access, what capabilities they have, and what network operations they can perform. 
 Unlike SELinux, **AppArmor uses file paths rather than labels**, making it simpler to configure and understand. 
 
 Profiles can run in either enforcement mode (blocking violations) or complain mode (logging violations without blocking). 
 
-AppArmor is particularly popular in Ubuntu and SUSE distributions, **providing an additional layer of defense by limiting the damage that compromised applications can cause**, 
+AppArmor is particularly popular in Ubuntu and SUSE distributions, 
+**providing an additional layer of defense by limiting the damage that compromised applications can cause**, 
 even if they're running with elevated privileges.
 
 ## Advantages of a Strong Password
@@ -538,13 +546,15 @@ even if they're running with elevated privileges.
 <p align="center">
 </p>
 
-A strong password is your first line of defense against unauthorized access to your accounts and systems. 
+A **strong password is your first line of defense against unauthorized access to your accounts and systems**. 
 
 Strong passwords—those that are long (12+ characters), complex (mixing uppercase, lowercase, numbers, and symbols), and unique for each account—are exponentially harder 
 for attackers to crack through brute force or dictionary attacks. 
 
 They protect against automated hacking tools that can try millions of password combinations per second. 
+
 A compromised weak password can lead to data breaches, identity theft, financial loss, and unauthorized access to sensitive information. 
+
 Additionally, strong passwords reduce the risk of credential stuffing attacks, 
 where hackers use stolen passwords from one breach to access other accounts.
 
@@ -556,7 +566,15 @@ where hackers use stolen passwords from one breach to access other accounts.
 <p align="center">
 </p>
 
-UFW is a user-friendly command-line interface for managing firewall rules on Linux systems, specifically designed as a simplified frontend for iptables. It allows administrators to easily configure which network ports are open or closed, control incoming and outgoing traffic, and set up rules without dealing with the complexity of raw iptables syntax. UFW is particularly useful because it provides a straightforward way to secure your system by blocking unwanted connections while allowing legitimate traffic. For example, you might allow SSH on port 22 while blocking all other incoming connections. It's especially valuable for server security, helping prevent unauthorized access and protecting against network-based attacks by implementing a default-deny policy and only opening specific ports as needed.
+**UFW is a user-friendly command-line interface for managing firewall rules on Linux systems**, specifically designed as a simplified frontend for iptables. 
+
+**It allows administrators to easily configure which network ports are open or closed**, control incoming and outgoing traffic, and set up rules without dealing with the complexity of raw iptables syntax. 
+
+**UFW is particularly useful because it provides a straightforward way to secure your system by blocking unwanted connections** while allowing legitimate traffic. 
+
+For example, you might allow SSH on port 22 while blocking all other incoming connections. 
+It's especially valuable for server security, helping prevent unauthorized access 
+and protecting against network-based attacks by implementing a default-deny policy and only opening specific ports as needed.
 
 ## SSH (Secure Shell)
 
@@ -583,7 +601,7 @@ SSH uses public-key cryptography for authentication, allowing passwordless login
 <p align="center">
 </p>
 
-Cron is a time-based job scheduler in Unix-like operating systems that automatically executes commands or scripts at specified intervals. 
+**Cron is a time-based job scheduler in Unix-like operating systems that automatically executes commands or scripts at specified intervals**. 
 
 Users create "cron jobs" by editing a crontab (cron table) file, which contains scheduling information 
 **in a specific format: minute, hour, day of month, month, day of week, followed by the command to execute**. 
