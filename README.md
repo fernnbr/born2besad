@@ -123,7 +123,7 @@ Please, save at least 5 hours to do this in a confy way.
 - Type "4242"
 - Then delete "Permit Root Login"
 - Write "PermitRootLogin no"
-- save (ctrl+X) 
+- save (ctrl+X); then Y + enter
 - clear
 
 ---
@@ -201,6 +201,7 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 - type your password
 - Go to PASS_MAX_DAYS and change it to 30
 - Go to PASS_MIN_DAYS and change it to 2
+- save (ctrl+X); then Y + enter
 - clear
 
 ---
