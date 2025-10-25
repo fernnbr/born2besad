@@ -23,12 +23,14 @@ Please, save at least 5 hours to do this in a confy way.
 
 # Installing 
 
+<div align="center">
 <p align="center">
   <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnZhZWF4d3d5NnN3Z24wM3RrM3ZyZzc2NThma3JwZXVnbzQ4eWVuNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11Cn7h5PA8cyiY/giphy.gif">
 </p></figcaption>
 <p align="center">
   (weeeeeee...)
 </p>
+</div>
 
 - We will be using Virtualbox
 - Download Debian (amd64) at https://www.debian.org/distrib/netinst
