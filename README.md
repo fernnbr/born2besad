@@ -426,20 +426,28 @@ Sudo : $cmnd commands"
 
 ---
 
-# To know more 
+# To know more | To study 
+
+<p align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3NvNXF3OXJqejBtYjdoa3lpMnV3NTJjZHJ4bHRzZWM4Nm9nOTM2diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1hXY6iNdTFpTW4je85/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
 
 ## How a Virtual Machine Works
 
 A virtual machine (VM) is a software-based emulation of a physical computer that runs on a host system. 
 It works through a layer called a hypervisor (or Virtual Machine Monitor), which sits between the hardware and the virtual machines. 
-The hypervisor allocates physical resources—CPU, memory, storage, and network—to each VM and manages their execution.There are two types of hypervisors:
+The hypervisor allocates physical resources, like **CPU, memory, storage, and network—to each VM and manages their execution**.
 
-- Type 1 (bare-metal): Runs directly on hardware (e.g., VMware ESXi, Hyper-V)
-- Type 2 (hosted): Runs on top of an operating system (e.g., VirtualBox, VMware Workstation)
+There are two types of hypervisors:
+
+- **Type 1 (bare-metal)**: Runs directly on hardware (e.g., VMware ESXi, Hyper-V)
+- **Type 2 (hosted)**: Runs on top of an operating system (e.g., VirtualBox, VMware Workstation)
 
 Each VM includes a complete operating system (guest OS) and applications, isolated from other VMs on the same host. 
 
-The hypervisor translates the VM's instructions to the physical hardware, creating the illusion that each VM has dedicated resources. 
+The **hypervisor translates the VM's instructions to the physical hardware**, creating the **illusion that each VM has dedicated resources**. 
 This isolation means VMs are independent—if one crashes, others continue running unaffected.
 
 ## CentOS vs DebianCentOS 
