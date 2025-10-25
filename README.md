@@ -437,6 +437,8 @@ Sudo : $cmnd commands"
   (ommmmmmggggggg...)
 </p>
 
+---
+
 ## How a Virtual Machine Works
 
 <p align="center">
@@ -460,6 +462,8 @@ Each VM includes a complete operating system (guest OS) and applications, isolat
 The **hypervisor translates the VM's instructions to the physical hardware**, creating the **illusion that each VM has dedicated resources**. 
 This isolation means VMs are independent—if one crashes, others continue running unaffected.
 
+---
+
 ## CentOS vs DebianCentOS 
 
 <p align="center">
@@ -477,6 +481,8 @@ It **focuses on enterprise stability with longer release cycles and extended sup
 
 It uses the DEB package format with APT package managers and offers three branches:
 Stable, Testing, and Unstable, giving users more flexibility in choosing between stability and cutting-edge features.
+
+---
 
 ## Purpose of Virtual Machines 
 
@@ -500,6 +506,8 @@ Virtual machines serve several critical purposes in modern computing:
   
 - **Cloud Computing**: VMs form the foundation of cloud infrastructure, enabling scalable, on-demand computing resources
 
+---
+
 ## APT vs AptitudeAPT (Advanced Package Tool) and Aptitude (https://youtu.be/i_SsnRdgitA?si=RcNbo9RApzX-4aui)
 
 <p align="center">
@@ -519,6 +527,8 @@ It offers more sophisticated dependency resolution, can automatically handle orp
 While **APT is simpler and faster for basic operations, Aptitude is more powerful for complex package management scenarios**, 
 though modern versions of APT have incorporated many of Aptitude's improvements.
 
+---
+
 ## AppArmorAppArmor (Application Armor) 
 
 <p align="center">
@@ -537,6 +547,8 @@ Profiles can run in either enforcement mode (blocking violations) or complain mo
 AppArmor is particularly popular in Ubuntu and SUSE distributions, 
 **providing an additional layer of defense by limiting the damage that compromised applications can cause**, 
 even if they're running with elevated privileges.
+
+---
 
 ## Advantages of a Strong Password
 
@@ -558,6 +570,8 @@ A compromised weak password can lead to data breaches, identity theft, financial
 Additionally, strong passwords reduce the risk of credential stuffing attacks, 
 where hackers use stolen passwords from one breach to access other accounts.
 
+---
+
 ## UFW (Uncomplicated Firewall)
 
 <p align="center">
@@ -576,6 +590,8 @@ For example, you might allow SSH on port 22 while blocking all other incoming co
 It's especially valuable for server security, helping prevent unauthorized access 
 and protecting against network-based attacks by implementing a default-deny policy and only opening specific ports as needed.
 
+---
+
 ## SSH (Secure Shell)
 
 <p align="center">
@@ -592,6 +608,8 @@ SSH replaces insecure protocols like Telnet and FTP by encrypting all data, incl
 
 It's essential for **system administrators managing servers, developers accessing remote development environments, and anyone needing secure remote connectivity**. 
 SSH uses public-key cryptography for authentication, allowing passwordless login through key pairs, which is both more secure and convenient than password-based authentication.
+
+---
 
 ## Cron
 
