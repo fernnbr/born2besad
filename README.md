@@ -5,7 +5,7 @@ It is an interface where the mind and body can connect with the universe and mov
 
 # Born2beSad | Welcome, Stranger (to the world of VM) 
 I hope to help you to suffer less with that that I do. 
-You're welcome. 
+You're welcome. **There's no bonus here**. 
 
 This guide also contains gifs. 
 To help you to laugh between one or two crying outbursts. 
@@ -22,7 +22,6 @@ Please, save at least 5 hours to do this in a confy way.
 
 # Downloading Debian (yeah, we'll not Rocky you) 
 
----
 
 # Installing 
 
@@ -51,29 +50,29 @@ Please, save at least 5 hours to do this in a confy way.
 
 ### Time to install the operating system (Click "Start" on your Virtualbox interface)
 
-- Select "Install" and then follow the on-screen instructions
-- Set the hostname as your login followed by 42 (i.e.: user42) (This is the name of your device on the local network)
+- Select **"Install"** and then follow the on-screen instructions
+- Set the **hostname as your login followed by 42** (i.e.: user42) _(This is the name of your device on the local network)_
 - Skip domain name configuration
-- Set a password for root
+- Set a password for root _(I recommend you to use a password accordinly to the password policies)_
 - Make a user with your login and set a password for this account
 - Select "Guided - use entire disk and set up encrypted LVM" [Option 03]
 - Partition disks: Select "Separate /home partition"
 - Click "Yes"
 - Wait
-- Type a strong password (min 10 char len, with lower and upper char, numbers and special char) 
-- Amount of volume: type "max"; then click "continue"
-- Click "Finish Partitioning and Write Changes"
-- Click "Yes"
+- Type a strong password _(min 10 char len, with lower and upper char, numbers and special char)_ 
+- Amount of volume: type **"max"**; then click "continue"
+- Click **"Finish Partitioning and Write Changes"**
+- Click **"Yes"**
 - Wait
-- Click "No"
-- Click "Debian.org" option
-- Click Continue
+- Click **"No"**
+- Click **"Debian.org"** option
+- Click **"Continue"**
 - Wait
-- Click "No" for the Survey
-- Now select only "SSH Server" and "standard system utilities"
-- Click "Yes" to install the GRUB loader
-- Select /dev/sda (ata-VBOX...)
-- Confirm reboot (select "Yes")
+- Click **"No"** for the Survey
+- Now select only **"SSH Server"** and **"standard system utilities"** _(use space to select)_
+- Click **"Yes"** to install the **GRUB** loader
+- Select **/dev/sda (ata-VBOX...)**
+- Confirm reboot (select **"Yes"**)
 
 ---
 
@@ -87,23 +86,23 @@ Please, save at least 5 hours to do this in a confy way.
 
 - login
 - clear
-- type "su -"
-- type password
-- type "apt update"
+- type **su -**
+- type your **password**
+- type **apt update**
 - type clear
-- type apt install sudo
+- type **apt install sudo**
 - clear
-- type "add user (your user) sudo"
-- type "getent group sudo"
-- type "reboot"
-- type "clear"
-- type "sudo -V"
-- type "sudo visudo"
+- type **add user (your user) sudo**
+- type **getent group sudo**
+- type **reboot**
+- type **clear**
+- type **sudo -V**
+- type **sudo visudo**
 - type the settings (retry, badpass message)
-- save (ctrl+X)
-- type "sudo mkdir" -p / var/log/sudo/ 
+- save (ctrl+X) + Y + Enter
+- type **sudo mkdir -p / var/log/sudo/** 
 - clear
-- type "sudo touch /var/log/sudo/sudo.log"
+- type **sudo touch /var/log/sudo/sudo.log**
 - clear
 
 ---
@@ -116,13 +115,13 @@ Please, save at least 5 hours to do this in a confy way.
 <p align="center">
 </p>
 
-- type "sudo apt install openssh-server -y"
+- type **sudo apt install openssh-server -y**
 - clear
-- sudo nano /etc/ssh/sshd_config
-- Go to "Port"
-- Type "4242"
-- Then delete "Permit Root Login"
-- Write "PermitRootLogin no"
+- **sudo nano /etc/ssh/sshd_config**
+- Go to **Port**
+- Type **4242**
+- Then delete **Permit Root Login**
+- Write **PermitRootLogin no**
 - save (ctrl+X); then Y + enter
 - clear
 
@@ -139,7 +138,7 @@ Please, save at least 5 hours to do this in a confy way.
 - type sudo nano /etc/ssh/ssh_config
 - save (ctrl+X) 
 - clear
-- type "sudo service ssh status"
+- type **sudo service ssh status**
 
 ---
 
@@ -151,12 +150,12 @@ Please, save at least 5 hours to do this in a confy way.
 <p align="center">
 </p>
 
-- type "sudo apt install ufw -y"
+- type **sudo apt install ufw -y**
 - wait
 - clear
-- type "sudo ufw enable"
-- type "sudo ufw allow 4242"
-- sudo ufw status
+- type **sudo ufw enable**
+- type **sudo ufw allow 4242**
+- type **sudo ufw status**
 
 ---
 
@@ -168,23 +167,21 @@ Please, save at least 5 hours to do this in a confy way.
 <p align="center">
 </p>
 
-- ssh (your username)@(your IP) -p 4242
-(In case of error try see your ip with ip a; if the error persists, shut down the VM; then open it again;
-then sleect your VM; then go to settings; then go to network; then change NAt to bridge; then use ip a again; then get the IP and redo the ssh step)\
-
+- **ssh (your username)@(your IP) -p 4242**
+(In case of error try see your ip with **ip a**; if the error persists, shut down the VM; then open it again;
+then select your VM; then go to settings; then go to network; then change NAt to Bridge; then use **ip a** again; then get the IP and redo the ssh step)
 
 
 --
---->>>> (continue from here)
 
 # SSH connection from Outside 
 #### To check if the terminal is listening 
 
-- type "netstat -tuln | grep 4242"
-- ssh (your username)@(your IP) -p 4242
-- ssh (your username)@(your IP) -p 4241
-- type "exit"
-- type "netstat -tuln | grep 4241"
+- type **netstat -tuln | grep 4242**
+- **ssh (your username)@(your IP) -p 4242**
+- **ssh (your username)@(your IP) -p 4241**
+- type **exit**
+- type **netstat -tuln | grep 4241**
 
 ---
 
@@ -197,10 +194,10 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 </p>
 
 
-- sudo nano /etc/login.defs
+- **sudo nano /etc/login.defs
 - type your password
-- Go to PASS_MAX_DAYS and change it to 30
-- Go to PASS_MIN_DAYS and change it to 2
+- Go to **PASS_MAX_DAYS** and change it to 30
+- Go to **PASS_MIN_DAYS** and change it to 2
 - save (ctrl+X); then Y + enter
 - clear
 
@@ -216,14 +213,14 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 </p>
 
 
-- type "sudo apt-get install libpam-pwquality -y"
+- type **sudo apt-get install libpam-pwquality -y**
 - Wait
 - clear
-- type "sudo nano /etc/pam.d/common-password"
-- Go to password requisite pam_pwquality.so retry=3 and add after it: minlen=10 ucredit=-1 lcredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
+- type **sudo nano /etc/pam.d/common-password**
+- Go to **password requisite pam_pwquality.so retry=3 and add after it: minlen=10 ucredit=-1 lcredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root**
 - Save (ctrl+X) 
 - Clear
-- type "sudo reboot"
+- type **sudo reboot**
 - Unlock VM
 
 ---
@@ -238,14 +235,14 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 </p>
 
 
-- type "passwd"
+- type **passwd**
 - Type your current password
 - Type your new password
 - Clear
-- type "sudo chage -l (your user)"
+- type **sudo chage -l (your user)**
 - Type your password
 - See the log of password changes info
-- Type "sudo chage -M 30 -m 2 -W 7 (your user)" (to change the config)
+- Type **sudo chage -M 30 -m 2 -W 7 (your user)" (to change the config)**
 - Clear
 
 ---
@@ -260,10 +257,10 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 </p>
 
 
-- type "sudo passwd root"
-- sudo chage -l root
-- sudo chage -M 30 -m 2 -W 7 root (to change the config)
-- sudo chage -l root (to check the changes)
+- type **sudo passwd root**
+- **sudo chage -l root**
+- **sudo chage -M 30 -m 2 -W 7 root** _(to change the config)_
+- **sudo chage -l root** _(to check the changes)_
 - clear
 
 ---
@@ -278,21 +275,21 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 </p>
 
 
-- type "sudo adduser new_user"
+- type **sudo adduser new_user**
 - type new password
 - clear
-- type "getent passwd new_user"
+- type **getent passwd new_user**
 - clear
-- type "sudo addgroup user42"
-- type "sudo addgroup evaluating"
-- type "sudo adduser (your user42)"
+- type **sudo addgroup user42**
+- type **sudo addgroup evaluating**
+- type **sudo adduser (your user42)**
 - type New Password
 - clear
-- type "sudo adduser (your user) user42"
-- type "sudo add user (your user) evaluating"
+- type **sudo adduser (your user) user42** _(YOU'LL DO IT NOW, PLEASE)_
+- type **sudo add user (your user) evaluating** _(YOU'LL DOT IT DURING YOUR AVALIATION)_
 - clear
-- type "getent group user42"
-- type "getent group evaluating"
+- type **getent group user42**
+- type **getent group evaluating**
 
 ---
 
@@ -306,9 +303,9 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 </p>
 
 
-- type "sudo touch /usr/local/bin/monitoring.sh"
-- type "sudo chmod 755 /usr/local/bin/monitoring.sh"
-- type "sudo nano /usr/local/bin/monitoring.sh"
+- type **sudo touch /usr/local/bin/monitoring.sh**
+- type **sudo chmod 755 /usr/local/bin/monitoring.sh**
+- type **sudo nano /usr/local/bin/monitoring.sh**
 - A blank window will open
 - Add the following script:
 
@@ -373,14 +370,14 @@ Sudo : $cmnd commands"
 ```
 
 - Save (ctrl+X) 
-- type "sudo visudo"
-- Go to %sudo ALL=(ALL:ALL) ALL
-- Below it type: "(your user) ALL=(ALL) NOPASSWD:/usr/local/bin/monitoring.sh"
+- type **sudo visudo**
+- Go to **%sudo ALL=(ALL:ALL) ALL**
+- Below it type: **(your user) ALL=(ALL) NOPASSWD:/usr/local/bin/monitoring.sh**
 - Save (ctrl+X)
 - Clear
-- type "sudo systemctl enable cron.service"
+- type **sudo systemctl enable cron.service**
 - clear
-- type "sudo reboot"
+- type **sudo reboot**
 - login to your VM
 - clear
 
@@ -394,10 +391,10 @@ Sudo : $cmnd commands"
 <p align="center">
 </p>
 
-- type "sudo crontab -u root -e"
+- type **sudo crontab -u root -e**
 - type your password
-- type/choose "1"
-- go to the EOF (End of the File) and type: "*/10 * * * * /usr/local/bin/monitoring.sh" (to run the script every 10 min)
+- type/choose **1**
+- go to the EOF (End of the File) and type: **"*/10 * * * * /usr/local/bin/monitoring.sh"** _(to run the script every 10 min)_
 - Save (ctrl+X)
 - Wait
 - Clear
@@ -413,8 +410,8 @@ Sudo : $cmnd commands"
 </p>
 
 - **power off the VM before generating the signature to avoid changing the disk image**
-- on your host machine **(not inside byour Virtual Machine)** navigate to where your .vdi file is stored (cd mnt/nfs/homes/(youruser)/sgoinfre/(name of the project))
-- Generate the SHA-1 checksum (shasum (nameoftheproject).vdi)
+- on your host machine **(not inside byour Virtual Machine)** navigate to where your **.vdi** file is stored 
+- Generate the SHA-1 checksum **shasum (nameoftheproject).vdi**
 - Wait
 - Copy the resulting hash into a file named **signature.txt**
 - **Do not start the VM again** unless you are ok with changing the signature
@@ -458,7 +455,7 @@ A **virtual machine (VM) is a software-based emulation of a physical computer th
 It **works through a layer called a hypervisor** (or Virtual Machine Monitor), which sits between the hardware and the virtual machines. 
 The hypervisor allocates physical resources, like **CPU, memory, storage, and network—to each VM and manages their execution**.
 
-There are **two types of hypervisors**:
+##### There are **two types of hypervisors**:
 
 - **Type 1 (bare-metal)**: Runs directly on hardware (e.g., VMware ESXi, Hyper-V)
 - **Type 2 (hosted)**: Runs on top of an operating system (e.g., VirtualBox, VMware Workstation)
