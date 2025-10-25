@@ -26,7 +26,7 @@ Please, save at least 5 hours to do this in a confy way.
   <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnZhZWF4d3d5NnN3Z24wM3RrM3ZyZzc2NThma3JwZXVnbzQ4eWVuNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11Cn7h5PA8cyiY/giphy.gif">
 </p></figcaption>
 <p align="center">
-  (print, print, print)
+  (weeeeeee...)
 </p>
 
 - Partition disks: Select "Separate /home partition"
@@ -48,6 +48,12 @@ Please, save at least 5 hours to do this in a confy way.
 -  Confirm reboot (select "Yes")
 
 # Server Configuration
+
+<p align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWNxOXRxaWZtbzFudWFsMnM4eG9jNGh5aHM2OHd6a2xwOGthYTNpcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tczJoRU7XwBS8/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
 
 - login
 - clear
@@ -72,6 +78,12 @@ Please, save at least 5 hours to do this in a confy way.
 
 # Installing and Configuring SSH 
 
+<p align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXNwMTlmZHpuNnBhamphZGowcHg2ZHM1azRjb2VudXd0Zmk1dm9zMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S0hxMGYFhEMzm/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
+
 - type "sudo apt install openssh-server -y"
 - clear
 - sudo nano /etc/ssh/sshd_config
@@ -83,6 +95,12 @@ Please, save at least 5 hours to do this in a confy way.
 - clear
 
 # Optional
+
+<p align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzNnNWhldWtoMXRib3ZlMDVpZXgydXNzY2lsNzc5dmZ6MWRvdWNxbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/T2qfJTEEfe4AU/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
 
 - type sudo nano /etc/ssh/ssh_config
 - save (ctrl+X) 
@@ -99,6 +117,12 @@ Please, save at least 5 hours to do this in a confy way.
 - sudo ufw status
 
 # Connecting to the VM via SSH 
+
+<p align="center">
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2d4eXZxOXdkZW40MTdhdTBubWZmaWMzMDM5emJhZG1qa3Y1cXlsMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gMfyVpJGHn0DDCZAUK/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
 
 - ssh (your username)@(your IP) -p 4242
 (In case of error try see your ip with ip a; if the error persists, shut down the VM; then open it again;
@@ -117,6 +141,12 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 
 # Password Policy
 
+<p align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjN1N2tqbmtobzZqN2h4dGhleWt2eTZqa2kzZzByYTd1Zmh1bHN6cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11fot0YzpQMA0g/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
+
 - sudo nano /etc/login.defs
 - type your password
 - Go to PASS_MAX_DAYS and change it to 30
@@ -124,6 +154,12 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 - clear
 
 ### Install the Password Quality Checking Lib
+
+<p align="center">
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDdwNW56MWluZmhwenZ2dWFnNnJkeWRpcGN3aTdocnoyd3p5Z2VjbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YGlRW1Am9q7e0/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
 
 - type "sudo apt-get install libpam-pwquality -y"
 - Wait
@@ -137,6 +173,12 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 
 # Update the old login to comply with the password policy
 
+<p align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3d2M29xdTR5NDg5d3F3aHpqdGxlMHh6ejNpcWp4eTAxejlkM3V3cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PPOLUsngQy68nx8tfp/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
+
 - type "passwd"
 - Type your current password
 - Type your new password
@@ -149,6 +191,12 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 
 # Update the old root password to comply the policy 
 
+<p align="center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTk0OTVsbXllazVhcHFrMmtjMHNiNWUxdnJmenFvcm1lNjYycDE4cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DXC8bM9ZM4Wn3PDvK7/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
+
 - type "sudo passwd root"
 - sudo chage -l root
 - sudo chage -M 30 -m 2 -W 7 root (to change the config)
@@ -156,6 +204,12 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 - clear
 
 # Creating Users and Groups 
+
+<p align="center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXBqdTI0Y2IyNGJyd2ltdGQ2dWh0MWhyaXI3NWR4a3A2ZGpvZmVvdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q86ySOsoUKl2KUm23o/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
 
 - type "sudo adduser new_user"
 - type new password
@@ -174,6 +228,13 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 - type "getent group evaluating"
 
 # Crontab Config
+
+<p align="center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHE3ZzUycXVzNnM0eHRhenkwYzJ4am00eDJxd2s3OHJ2ZHRyNnpvayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dxP9yzCvWre2XLoPfx/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
+
 
 - type "sudo touch /usr/local/bin/monitoring.sh"
 - type "sudo chmod 755 /usr/local/bin/monitoring.sh"
@@ -255,6 +316,12 @@ Sudo : $cmnd commands"
 
 # Test Run the Script
 
+<p align="center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXBlMGdxNG91YTZuNGJjajMzYWI5eWo5dm52MXl4dWtqZ3RwbDllayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CUbiYQbsKSGAM/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
+
 - type "sudo crontab-u root -e"
 - type your password
 - type/choose "1"
@@ -263,7 +330,13 @@ Sudo : $cmnd commands"
 
 # Generating Signature .txt
 
-- power off the VM before generating the signature to avoid changing the disk image
+<p align="center">
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWZseWxma2VhY2diN3B2dHE0eHd2ZngxdThxZDVseWpvMW41d28wNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3orieOSehVQs29STDi/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
+
+- **power off the VM before generating the signature to avoid changing the disk image**
 - on your host machine **(not inside byour Virtual Machine)** navigate to where your .vdi file is stored (cd mnt/nfs/homes/(youruser)/sgoinfre/(name of the project))
 - Generate the SHA-1 checksum (shasum (nameoftheproject).vdi)
 - Wait
@@ -272,5 +345,12 @@ Sudo : $cmnd commands"
 - If you need more changes, or clone the VM or keep a snapshot
 
 
-#### Credits: Many thanks to Nirmal Gope 
+#### Credits: Many thanks to Nirmal Gope and all the colleagues that helped a lot 
+
+<p align="center">
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2lhbDRrcDB2ZWJncjVuOTdjMjAzcDdidW8zbjhxeXliNDQwZWl6cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WKdPOVCG5LPaM/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
+
 
