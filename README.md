@@ -1,5 +1,9 @@
-# Welcome, Stranger to the world of f*ck**g VM 
-I hope to help you to suffer less with that that I do. You're welcome. 
+# Born2beSad | Welcome, Stranger to the world of VM 
+I hope to help you to suffer less with that that I do. 
+You're welcome. 
+
+This guide also contains gifs. 
+To help you to laugh between one or two crying outbursts. 
 
 ```
 “A computer terminal is not some clunky old television with a typewriter in front of it.
@@ -16,8 +20,14 @@ Please, save at least 5 hours to do this in a confy way.
 # Downloading Debian (yeah, we'll not Rocky you) 
 
 
-
 # Installing 
+
+<p align="center">
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnZhZWF4d3d5NnN3Z24wM3RrM3ZyZzc2NThma3JwZXVnbzQ4eWVuNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11Cn7h5PA8cyiY/giphy.gif">
+</p></figcaption>
+<p align="center">
+  (print, print, print)
+</p>
 
 - Partition disks: Select "Separate /home partition"
 - Click "Yes"
