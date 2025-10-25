@@ -1,3 +1,8 @@
+```
+“A computer terminal is not some clunky old television with a typewriter in front of it.
+It is an interface where the mind and body can connect with the universe and move bits of it about.”
+```
+
 # Born2beSad | Welcome, Stranger (to the world of VM) 
 I hope to help you to suffer less with that that I do. 
 You're welcome. 
@@ -5,10 +10,8 @@ You're welcome.
 This guide also contains gifs. 
 To help you to laugh between one or two crying outbursts. 
 
-```
-“A computer terminal is not some clunky old television with a typewriter in front of it.
-It is an interface where the mind and body can connect with the universe and move bits of it about.”
-```
+
+---
 
 # Virtual Machine 
 #### A really step by step guide 
