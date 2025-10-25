@@ -439,6 +439,12 @@ Sudo : $cmnd commands"
 
 ## How a Virtual Machine Works
 
+<p align="center">
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDg4dGF4eWtmOWdnbXEzd2I0dXJhemJ4eWVpb2hrdXNmY2xoZWpraCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mcsPU3SkKrYDdW3aAU/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
+
 A virtual machine (VM) is a software-based emulation of a physical computer that runs on a host system. 
 It works through a layer called a hypervisor (or Virtual Machine Monitor), which sits between the hardware and the virtual machines. 
 The hypervisor allocates physical resources, like **CPU, memory, storage, and network—to each VM and manages their execution**.
@@ -455,6 +461,12 @@ This isolation means VMs are independent—if one crashes, others continue runni
 
 ## CentOS vs DebianCentOS 
 
+<p align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExejZ4OXoycDB2eG5jdGw1dnppeTNmNDZ5dXg0c3gzYmJkbGp5dWt2aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qP493R1PqZi44u4kKl/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
+
 Both are popular Linux distributions but serve different philosophies and use cases. 
 
 - CentOS (now CentOS Stream) is based on Red Hat Enterprise Linux (RHEL) and uses the RPM package management system with YUM/DNF package managers.
@@ -466,6 +478,12 @@ Stable, Testing, and Unstable, giving users more flexibility in choosing between
 
 ## Purpose of Virtual Machines 
 
+<p align="center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXZwdzZtNGdnc3E3ejRiaG8xeDhqcG1ocDJ5c3phYWZybzN2MHY3bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bLk0duhUxBrpHLA4M5/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
+
 Virtual machines serve several critical purposes in modern computing:
 
 - **Server Consolidation**: Multiple VMs can run on a single physical server, maximizing hardware utilization and reducing costs
@@ -476,6 +494,12 @@ Virtual machines serve several critical purposes in modern computing:
 - **Cloud Computing**: VMs form the foundation of cloud infrastructure, enabling scalable, on-demand computing resources
 
 ## APT vs AptitudeAPT (Advanced Package Tool) and Aptitude 
+
+<p align="center">
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGJkc2ppM2FyZ253eGg0YmFxZTF4ZDhmNnZidW9mY20wdTB0Yzl0YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/asI6WBJXOn30I/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
 
 Both are package management tools for Debian-based systems, but they differ in functionality and interface. 
 
@@ -490,6 +514,12 @@ though modern versions of APT have incorporated many of Aptitude's improvements.
 
 ## AppArmorAppArmor (Application Armor) 
 
+<p align="center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdG8zdmRmejVtdTg2NGNuczFudHB3emo0a2xqdjRxM3l3eTAycXF2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btNjXRumA5KHOCs/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
+
 is a Linux security module that implements mandatory access control (MAC) to restrict programs' capabilities and access to system resources. 
 
 It works by assigning security profiles to applications that define what files they can access, what capabilities they have, and what network operations they can perform. 
@@ -501,6 +531,12 @@ AppArmor is particularly popular in Ubuntu and SUSE distributions, **providing a
 even if they're running with elevated privileges.
 
 ## Advantages of a Strong Password
+
+<p align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnFjMjFzdGtzOTA3ejduZm9mbmlrN3JudDQ3ZTd4bzcwMGlyeTZtbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fq6xyKgDC0eAE2ezxV/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
 
 A strong password is your first line of defense against unauthorized access to your accounts and systems. 
 
@@ -514,9 +550,21 @@ where hackers use stolen passwords from one breach to access other accounts.
 
 ## UFW (Uncomplicated Firewall)
 
+<p align="center">
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2czbzNyeHRseTBmY3M2amdibmhqZWRpenBvcXZkdG91Z3d4ZXgyNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5GuExKmluBdrrtAFwk/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
+
 UFW is a user-friendly command-line interface for managing firewall rules on Linux systems, specifically designed as a simplified frontend for iptables. It allows administrators to easily configure which network ports are open or closed, control incoming and outgoing traffic, and set up rules without dealing with the complexity of raw iptables syntax. UFW is particularly useful because it provides a straightforward way to secure your system by blocking unwanted connections while allowing legitimate traffic. For example, you might allow SSH on port 22 while blocking all other incoming connections. It's especially valuable for server security, helping prevent unauthorized access and protecting against network-based attacks by implementing a default-deny policy and only opening specific ports as needed.
 
 ## SSH (Secure Shell)
+
+<p align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG5naWY3MnAxbWZnMTEwc3gxeGMwdjlzYTFoeDBreXRhc3R2dHVqaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/14ezDpib8JS04E/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
 
 **SSH is a cryptographic network protocol used for secure remote access and management of computers over unsecured networks**. 
 
@@ -528,6 +576,12 @@ It's essential for **system administrators managing servers, developers accessin
 SSH uses public-key cryptography for authentication, allowing passwordless login through key pairs, which is both more secure and convenient than password-based authentication.
 
 ## Cron
+
+<p align="center">
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2ZhdXJrc2hzcXhkNXk0ZHl2am54dHI4Y3BudDRkYmc2YWd0a2diZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fKYdL6Sb3gnJJyrQ7z/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
 
 Cron is a time-based job scheduler in Unix-like operating systems that automatically executes commands or scripts at specified intervals. 
 
