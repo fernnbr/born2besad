@@ -19,6 +19,7 @@ Please, save at least 5 hours to do this in a confy way.
 
 # Downloading Debian (yeah, we'll not Rocky you) 
 
+---
 
 # Installing 
 
@@ -46,6 +47,8 @@ Please, save at least 5 hours to do this in a confy way.
 -  Click "Yes" to install the GRUB loader
 -  Select /dev/sda (ata-VBOX...)
 -  Confirm reboot (select "Yes")
+
+---
 
 # Server Configuration
 
@@ -76,6 +79,8 @@ Please, save at least 5 hours to do this in a confy way.
 - type "sudo touch /var/log/sudo/sudo.log"
 - clear
 
+---
+
 # Installing and Configuring SSH 
 
 <p align="center">
@@ -94,6 +99,8 @@ Please, save at least 5 hours to do this in a confy way.
 - save (ctrl+X) 
 - clear
 
+---
+
 # Optional
 
 <p align="center">
@@ -107,7 +114,15 @@ Please, save at least 5 hours to do this in a confy way.
 - clear
 - type "sudo service ssh status"
 
-#Installing and Configurin UFW
+---
+
+# Installing and Configurin UFW
+
+<p align="center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWVxb2g1cThmNDQzemlveDNkY2FpcjU4aTRiNXRyYnNoM2lmNnkzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AwrtP9lMXtXiM/giphy.gif">
+</p></figcaption>
+<p align="center">
+</p>
 
 - type "sudo apt install ufw -y"
 - wait
@@ -115,6 +130,8 @@ Please, save at least 5 hours to do this in a confy way.
 - type "sudo ufw enable"
 - type "sudo ufw allow 4242"
 - sudo ufw status
+
+---
 
 # Connecting to the VM via SSH 
 
@@ -128,6 +145,9 @@ Please, save at least 5 hours to do this in a confy way.
 (In case of error try see your ip with ip a; if the error persists, shut down the VM; then open it again;
 then sleect your VM; then go to settings; then go to network; then change NAt to bridge; then use ip a again; then get the IP and redo the ssh step)\
 
+
+
+--
 --->>>> (continue from here)
 
 # SSH connection from Outside 
@@ -138,6 +158,8 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 - ssh (your username)@(your IP) -p 4241
 - type "exit"
 - type "netstat -tuln | grep 4241"
+
+---
 
 # Password Policy
 
@@ -152,6 +174,8 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 - Go to PASS_MAX_DAYS and change it to 30
 - Go to PASS_MIN_DAYS and change it to 2
 - clear
+
+---
 
 ### Install the Password Quality Checking Lib
 
@@ -171,6 +195,8 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 - type "sudo reboot"
 - Unlock VM
 
+---
+
 # Update the old login to comply with the password policy
 
 <p align="center">
@@ -189,6 +215,8 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 - Type "sudo chage -M 30 -m 2 -W 7 (your user)" (to change the config)
 - Clear
 
+---
+
 # Update the old root password to comply the policy 
 
 <p align="center">
@@ -202,6 +230,8 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 - sudo chage -M 30 -m 2 -W 7 root (to change the config)
 - sudo chage -l root (to check the changes)
 - clear
+
+---
 
 # Creating Users and Groups 
 
@@ -226,6 +256,8 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 - clear
 - type "getent group user42"
 - type "getent group evaluating"
+
+---
 
 # Crontab Config
 
@@ -314,6 +346,8 @@ Sudo : $cmnd commands"
 - login to your VM
 - clear
 
+---
+
 # Test Run the Script
 
 <p align="center">
@@ -327,6 +361,8 @@ Sudo : $cmnd commands"
 - type/choose "1"
 - go to the EOF (End of the File) and type: "*/10 * * * * /usr/local/bin/monitoring.sh" (to run the script every 10 min)
 - Save (ctrl+X)
+
+---
 
 # Generating Signature .txt
 
@@ -343,6 +379,8 @@ Sudo : $cmnd commands"
 - Copy the resulting hash into a file named **signature.txt**
 - **Do not start the VM again** unless you are ok with changing the signature
 - If you need more changes, or clone the VM or keep a snapshot
+
+---
 
 
 #### Credits: Many thanks to Nirmal Gope and all the colleagues that helped a lot 
