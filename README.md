@@ -185,7 +185,6 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 
 # Password Policy
 
-
 <p align="center">
   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjN1N2tqbmtobzZqN2h4dGhleWt2eTZqa2kzZzByYTd1Zmh1bHN6cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11fot0YzpQMA0g/giphy.gif">
 </p></figcaption>
