@@ -73,7 +73,31 @@
 
 - ssh (your username)@(your IP) -p 4242
 (In case of error try see your ip with ip a; if the error persists, shut down the VM; then open it again;
-then sleect your VM; then go to settings; then go to network; then change NAt to bridge; then use ip a again; then get the IP and redo the ssh step)
+then sleect your VM; then go to settings; then go to network; then change NAt to bridge; then use ip a again; then get the IP and redo the ssh step)\
+
+--->>>> (continue from here)
+
+# SSH connection from Outside 
+#### To check if the terminal is listening 
+
+- type "netstat -tuln | grep 4242"
+- ssh (your username)@(your IP) -p 4242
+- ssh (your username)@(your IP) -p 4241
+- type "exit"
+- type "netstat -tuln | grep 4241"
+
+# Password Policy
+
+- sudo nano /etc/login.defs
+- type your password
+- Go to PASS_MAX_DAYS and change it to 30
+- Go to PASS_MIN_DAYS and change it to 2
+- clear
+
+### Install the Password Quality Checking Lib
+
+- type "sudo apt-get install libpam-pwquality -y"
+- 
 
 Continue
 (https://youtu.be/3Vw0HlJHLTQ?si=lsyIAY6g-ddQdhSz&t=651)
