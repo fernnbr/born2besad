@@ -1,3 +1,22 @@
+# Welcome, Stranger to the world of f*ck**g VM 
+I hope to help you to suffer less with that that I do. You're welcome. 
+
+```
+“A computer terminal is not some clunky old television with a typewriter in front of it.
+It is an interface where the mind and body can connect with the universe and move bits of it about.”
+```
+
+# Virtual Machine 
+#### A really step by step guide 
+
+I'll guide you through the steps of setting your VM! 
+Sharing the knowledge shared with me by many at the community onilne and in person. 
+Please, save at least 5 hours to do this in a confy way. 
+
+# Downloading Debian (yeah, we'll not Rocky you) 
+
+
+
 # Installing 
 
 - Partition disks: Select "Separate /home partition"
@@ -151,6 +170,7 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 - type "sudo nano /usr/local/bin/monitoring.sh"
 - A blank window will open
 - Add the following script:
+
 ```
 #!/bin/bash
 
