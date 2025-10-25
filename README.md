@@ -30,6 +30,28 @@ Please, save at least 5 hours to do this in a confy way.
   (weeeeeee...)
 </p>
 
+- We will be using Virtualbox
+- Download Debian (amd64) at https://www.debian.org/distrib/netinst
+- Open up Virtualbox and click "New"
+- Name your virtual machine (remember to take a picture or take notes of the name)
+- Choose the downloaded ISO image (debian),
+- Select a storage location for the data (sgoinfre)
+- Check "Skip Unattended Installation"
+- Allocate at least 8 GiB of RAM (1000 Mb) and 8 vCPU cores
+- Click Next
+- Allocate 10 Gb in Disk Size
+- Click "Pre-Allocate Full Size"
+- Click Next
+- Click Finish
+
+### Time to install the operating system (Click "Start" on your Virtualbox interface)
+
+- Select "Install" and then follow the on-screen instructions
+- Set the hostname as your login followed by 42 (i.e.: user42) (This is the name of your device on the local network)
+- Skip domain name configuration
+- Set a password for root
+- Make a user with your login and set a password for this account
+- Select "Guided - use entire disk and set up encrypted LVM" [Option 03]
 - Partition disks: Select "Separate /home partition"
 - Click "Yes"
 - Wait
@@ -43,10 +65,10 @@ Please, save at least 5 hours to do this in a confy way.
 - Click Continue
 - Wait
 - Click "No" for the Survey
--  Now select only "SSH Server" and "standard system utilities"
--  Click "Yes" to install the GRUB loader
--  Select /dev/sda (ata-VBOX...)
--  Confirm reboot (select "Yes")
+- Now select only "SSH Server" and "standard system utilities"
+- Click "Yes" to install the GRUB loader
+- Select /dev/sda (ata-VBOX...)
+- Confirm reboot (select "Yes")
 
 ---
 
