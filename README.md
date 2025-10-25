@@ -394,11 +394,13 @@ Sudo : $cmnd commands"
 <p align="center">
 </p>
 
-- type "sudo crontab-u root -e"
+- type "sudo crontab -u root -e"
 - type your password
 - type/choose "1"
 - go to the EOF (End of the File) and type: "*/10 * * * * /usr/local/bin/monitoring.sh" (to run the script every 10 min)
 - Save (ctrl+X)
+- Wait
+- Clear
 
 ---
 
