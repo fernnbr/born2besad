@@ -1,4 +1,4 @@
-# Born2beSad | Welcome, Stranger to the world of VM 
+# Born2beSad | Welcome, Stranger (to the world of VM) 
 I hope to help you to suffer less with that that I do. 
 You're welcome. 
 
