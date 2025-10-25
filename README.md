@@ -185,11 +185,13 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 
 # Password Policy
 
+
 <p align="center">
   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjN1N2tqbmtobzZqN2h4dGhleWt2eTZqa2kzZzByYTd1Zmh1bHN6cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11fot0YzpQMA0g/giphy.gif">
 </p></figcaption>
 <p align="center">
 </p>
+
 
 - sudo nano /etc/login.defs
 - type your password
@@ -201,11 +203,13 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 
 ### Install the Password Quality Checking Lib
 
+
 <p align="center">
   <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDdwNW56MWluZmhwenZ2dWFnNnJkeWRpcGN3aTdocnoyd3p5Z2VjbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YGlRW1Am9q7e0/giphy.gif">
 </p></figcaption>
 <p align="center">
 </p>
+
 
 - type "sudo apt-get install libpam-pwquality -y"
 - Wait
@@ -221,11 +225,13 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 
 # Update the old login to comply with the password policy
 
+
 <p align="center">
   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3d2M29xdTR5NDg5d3F3aHpqdGxlMHh6ejNpcWp4eTAxejlkM3V3cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PPOLUsngQy68nx8tfp/giphy.gif">
 </p></figcaption>
 <p align="center">
 </p>
+
 
 - type "passwd"
 - Type your current password
@@ -241,11 +247,13 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 
 # Update the old root password to comply the policy 
 
+
 <p align="center">
   <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTk0OTVsbXllazVhcHFrMmtjMHNiNWUxdnJmenFvcm1lNjYycDE4cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DXC8bM9ZM4Wn3PDvK7/giphy.gif">
 </p></figcaption>
 <p align="center">
 </p>
+
 
 - type "sudo passwd root"
 - sudo chage -l root
@@ -257,11 +265,13 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 
 # Creating Users and Groups 
 
+
 <p align="center">
   <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXBqdTI0Y2IyNGJyd2ltdGQ2dWh0MWhyaXI3NWR4a3A2ZGpvZmVvdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q86ySOsoUKl2KUm23o/giphy.gif">
 </p></figcaption>
 <p align="center">
 </p>
+
 
 - type "sudo adduser new_user"
 - type new password
@@ -282,6 +292,7 @@ then sleect your VM; then go to settings; then go to network; then change NAt to
 ---
 
 # Crontab Config
+
 
 <p align="center">
   <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHE3ZzUycXVzNnM0eHRhenkwYzJ4am00eDJxd2s3OHJ2ZHRyNnpvayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dxP9yzCvWre2XLoPfx/giphy.gif">
