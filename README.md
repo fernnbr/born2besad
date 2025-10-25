@@ -633,3 +633,217 @@ For example, you could schedule a backup script to run every night at 2 AM, or h
 The cron daemon runs continuously in the background, checking every minute whether any scheduled jobs need to be executed, making it an essential tool for system automation and maintenance.
 
 
+---
+---
+
+# Commands to Study and Repeat to Understand
+
+```shell
+sudo nano /etc/ssh/sshd_config
+sudo nano /etc/sudoers.d/sudo_config
+sudo nano /etc/login.defs
+sudo nano /etc/pam.d/common-password
+```
+
+
+1. Verificar se não há nenhuma interface gráfica em uso.
+
+```shell
+ls /usr/bin/*session
+```
+
+2. Verificar se o serviço UFW está sendo utilizado.
+
+```shell
+sudo ufw status
+sudo service ufw status
+```
+
+3. Verificar se o serviço SSH está sendo utilizado.
+
+```shell
+sudo service ssh status
+```
+
+4. Verifique se está a utilizar o sistema operativo Debian ou Centos.
+
+```shell
+uname -v
+# or
+uname --kernel-version
+```
+
+5. Verifique se o seu utilizador está nos grupos "sudo" e "user42".
+
+```shell
+getent group sudo
+getent group user42
+```
+
+6. Criar um novo utilizador e mostrar que segue a política de senha que criamos.
+
+```shell
+sudo adduser name_user
+```
+
+7. Criamos um novo grupo chamado "evaluating".
+
+```shell
+sudo addgroup evaluating
+```
+
+8. Acrescentar o novo utilizador ao novo grupo.
+
+```shell
+sudo adduser name_user evaluating
+```
+
+- Para verificar se foi introduzido corretamente.
+
+```shell
+sudo getent group evaluating
+```
+
+9. Verificar se o nome da máquina está correto para o login42.
+
+```shell
+hostname
+```
+
+10. Modifique o nome de anfitrião para substituir o seu login pelo login do avaliador.
+
+```shell
+sudo nano /etc/hostname
+sudo nano /etc/hosts
+```
+
+- Reiniciar a máquina e verificar se foi alterado após o boot.
+
+```shell
+sudo reboot
+hostname
+```
+
+11. Verificar se todas as partições estão como indicado no subject.
+
+```shell
+lsblk
+```
+
+12. Verificar se o sudo está instalado.
+
+```shell
+which sudo
+# or
+dpkg -s sudo
+```
+
+13. Introduzir o novo utilizador no grupo sudo e verificar se foi adicionado.
+
+```shell
+sudo adduser name_user sudo
+getent group sudo
+```
+
+14. Mostra a aplicação das regras impostas ao sudo pelo subject.
+
+```shell
+sudo nano /etc/sudoers.d/sudo_config
+```
+
+15. Mostra que o caminho /var/log/sudo/ existe e contém pelo menos um ficheiro, no qual se deve ver um histórico dos comandos utilizados com o sudo.
+
+```shell
+cd /var/log/sudo
+ls
+cat sudo_config
+# Executar um comando com sudo e verificar se o arquivo foi atualizado.
+sudo nano hello42world
+cat sudo_config
+```
+
+16. Verificar se o programa UFW está instalado na máquina virtual e verificar se está funcionando corretamente.
+
+```shell
+dpkg -s ufw
+sudo service ufw status
+```
+
+17. Listar as regras ativas na UFW (se a parte de bônus não for feita, apenas a regra para a porta 4242 deve aparecer).
+
+```shell
+sudo ufw status numbered
+```
+
+18. Criar uma nova regra para a porta 8080. Verifique se foi adicionada as regras ativas e depois pode apagá-la.
+
+```shell
+sudo ufw allow 8080
+sudo ufw status numbered
+```
+
+- Para deletar a regra, devemos usar o comando sudo ufw delete num_rule
+
+```shell
+sudo ufw delete num_rule/etc/init.d/cron stop
+```
+
+- Verificamos se foi deletada e vemos o número da regra seguinte a ser deletada.
+
+```shell
+sudo ufw status numbered
+```
+
+- Eliminamos novamente a regra.
+
+```shell
+sudo ufw delete num_rule
+```
+
+- Verificamos que só nos restam as regras necessárias no subject.
+
+```shell
+sudo ufw status numbered
+```
+
+19. Verificar se o serviço ssh está instalado na máquina virtual, se funciona corretamente e se só funciona na porta 4242.
+
+```shell
+which ssh
+sudo service ssh status
+```
+
+20. Utilize ssh para iniciar sessão com o utilizador recém-criado. Certifique-se de que não pode utilizar o ssh com o utilizador de root.
+
+```shell
+ssh root@ip_machine -p 4242
+# deve retornar erro de permissão negada
+```
+
+```shell
+ssh usuário@ip_machine -p 4242
+```
+
+21. Modificar o tempo de execução do script de 10 minutos para 1 minuto.
+
+```shell
+sudo crontab -u root -e
+```
+
+22. Fazer o script parar de funcionar quando o servidor tiver começado, mas não modificar o script.
+
+```shell
+sudo /etc/init.d/cron stop # não funciona
+sudo systemctl stop cron
+sudo systemctl disable cron
+sudo systemctl enable cron
+
+```
+
+- Para inicializa-lo novamente
+
+```shell
+sudo /etc/init.d/cron start # não funciona
+```
+
+
