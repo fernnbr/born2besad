@@ -432,6 +432,7 @@ Sudo : $cmnd commands"
   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3NvNXF3OXJqejBtYjdoa3lpMnV3NTJjZHJ4bHRzZWM4Nm9nOTM2diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1hXY6iNdTFpTW4je85/giphy.gif">
 </p></figcaption>
 <p align="center">
+  (ommmmmmggggggg...)
 </p>
 
 ## How a Virtual Machine Works
