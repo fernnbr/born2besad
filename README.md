@@ -1,7 +1,9 @@
 
-## “A computer terminal is not some clunky old television with a typewriter in front of it.
-## It is an interface where the mind and body can connect with the universe and move bits of it about.”
-## - Douglas Adams
+```
+“A computer terminal is not some clunky old television with a typewriter in front of it.
+It is an interface where the mind and body can connect with the universe and move bits of it about.”
+- Douglas Adams
+```
 
 
 # Born2beSad | Welcome, Stranger (to the world of VM) 
